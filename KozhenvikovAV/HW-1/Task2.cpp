@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-char NumberToLetter(int n) 
+char NumberToLetter(int n)
 {
     switch (n)
     {
@@ -37,7 +37,7 @@ char NumberToLetter(int n)
 
     default:
         std::cout << "Wrong number. Try again\n";
-        
+
         int newN;
         std::cin >> newN;
         NumberToLetter(newN);
@@ -47,12 +47,6 @@ char NumberToLetter(int n)
 
 int main()
 {
-    std::cout << "Task 1:\n\n";
-    
-    char s = 127;
-    std::cout << ++s;
-    std::cout << '\n';
-
     std::cout << "\nTask 2:\n\nWrite your number 0-9\n";
 
     int n;

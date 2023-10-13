@@ -1,17 +1,17 @@
 #include <iostream>
 
 int main() {
-	// номер 1
-	// переполнение типа char
-	char symbol1 = 128; // с переполнением
-	char symbol2 = -128; // аналог без переполнения
+	// task 1
+	// char overflow
+	char symbol1 = 128; // with overflowing
+	char symbol2 = -128; // same without overflowing
 	std::cout << symbol1 << std::endl;
 	std::cout << symbol2 << std::endl;
-	std::cout << (symbol1 == symbol2) << std::endl; // проверка их равенства
-	// переполнение типа double
+	std::cout << (symbol1 == symbol2) << std::endl; // equal check
+	// double overflow
 	double number = 1.7E+308 * 10;
 	std::cout << number << std::endl;
-	// номер 2
+	// task 2
 	int digit;
 	std::cout << "Enter the digit: ";
 	std::cin >> digit;

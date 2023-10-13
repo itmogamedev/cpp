@@ -1,17 +1,17 @@
 #include <iostream>
 
 int main() {
-	// номер 1
-	std::cout << "Введите количество чисел Фиббоначчи, которое необходимо вывести: ";
+	// task 1
+	std::cout << "Enter the amount of Fibbonacci numbers that has to be printed: ";
 	int fib_count;
 	bool flag = false;
 	while (not flag) {
 		std::cin >> fib_count;
 		if (fib_count < 0) {
-			std::cout << "Нельзя вывести отрицательное количество чисел :(" << std::endl << "Попробуйте ещё раз: ";
+			std::cout << "The negative amount of numbers can't be printed :(" << std::endl << "Please, try again: ";
 		}
 		else if (fib_count == 0) {
-			std::cout << "0 чисел, ну ок -_-" << std::endl;
+			std::cout << "0 numbers. Well, ok -_-" << std::endl;
 			flag = true;
 		}
 		else if (fib_count == 1) {
@@ -33,8 +33,8 @@ int main() {
 			flag = true;
 		}
 	}
-	// номер 2
-	std::cout << "Введите число, которое хотите перевернуть: ";
+	// task 2
+	std::cout << "Enter the number you want to revert: ";
 	int number;
 	std::cin >> number;
 	int sign;
@@ -54,6 +54,6 @@ int main() {
 		pos_number /= 10;
 	}
 	new_number *= sign;
-	std::cout << "Перевёрнутое число: " << new_number;
+	std::cout << "Reverted number: " << new_number;
 	return 0;
 }

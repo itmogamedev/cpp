@@ -4,7 +4,7 @@ int main()
 {
 	int j;
 	setlocale(LC_ALL, "RUS");
-	printf("Ââåäèòå öèôðó: ");
+	printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†Ð¸Ñ„Ñ€Ñƒ: ");
 	cin >> j;
 	switch (j)
 	{
@@ -33,7 +33,7 @@ int main()
 		cout << 'n';
 		break;
 	default:
-		cout << "Íåïðàâèëüíûé ââîä";
+		cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´";
 	}
 	return 0;
 }

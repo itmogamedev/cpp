@@ -6,7 +6,7 @@ int main() {
     if (n < 0) {
         std::cout << '-';
     } else if (n=0){
-        stf::cout<<0;
+        std::cout<<0;
     }
     n = abs(n);
     while (n > 0) {

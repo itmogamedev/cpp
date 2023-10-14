@@ -1,39 +1,38 @@
 #include <iostream>
-using namespace std;
 int main()
 {
 	int j;
 	setlocale(LC_ALL, "RUS");
 	printf("Введите цифру: ");
-	cin >> j;
+	std::cin >> j;
 	switch (j)
 	{
 	case 0:
-		cout << 'z';
+		std::cout << 'z';
 		break;
 	case 1:
-		cout << 'o';
+		std::cout << 'o';
 		break;
 	case 2:
 	case 3:
-		cout << 't';
+		std::cout << 't';
 		break;
 	case 4:
 	case 5:
-		cout << 'f';
+		std::cout << 'f';
 		break;
 	case 6:
 	case 7:
-		cout << 's';
+		std::cout << 's';
 		break;
 	case 8:
-		cout << 'e';
+		std::cout << 'e';
 		break;
 	case 9:
-		cout << 'n';
+		std::cout << 'n';
 		break;
 	default:
-		cout << "Неверный ввод";
+		std::cout << "Неверный ввод";
 	}
 	return 0;
 }

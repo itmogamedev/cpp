@@ -28,7 +28,7 @@ int main()
 
     }
 
-    //delete[] array; эта штука освобождает память, но из-за неё ругается VS, так что я её закомментил
+    //delete[] array; this thing frees memory, but it causes VS to crash, so I've commented it out.
 
     std::cout << "\nThe programm has completed.\n\n";
 

@@ -5,7 +5,7 @@ int main() {
     std::cin >> n;
     if (n < 0) {
         std::cout << '-';
-    } else if (n=0){
+    } else if (n==0){
         std::cout<<0;
     }
     n = abs(n);

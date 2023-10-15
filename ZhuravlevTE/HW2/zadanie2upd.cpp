@@ -14,7 +14,13 @@ int main() {
 		n = n / 10;
 	}
 
-	std::cout << "New number: " << revn;
+	if (revn < 0) {
+		revn = revn * (-1);
+		std::cout << "New number: " << revn << "-";
+	}
+	else {
+		std::cout << "New number: " << revn;
+	}
 
 	return 0;
 }

@@ -1,7 +1,10 @@
 ﻿#include <iostream>
 #include <math.h>
 int Fibonachi(int n) {
-    if (n == 0 || n == 1) {
+    if(n < 0):
+		std::cout << "Wrong type of num";
+		return 1;
+	if (n == 0 || n == 1) {
         return n;
     
     

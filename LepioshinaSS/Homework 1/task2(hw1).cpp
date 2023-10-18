@@ -2,9 +2,9 @@
 
 int main()
 {
-	setlocale(LC_ALL, ""); //включила кириллицу
+	setlocale(LC_ALL, "");
 	int input = 0;
-	std::cout << "¬ведите цифру: ";
+	std::cout << "Write your number ";
 	std::cin >> input;
 
 	switch (input)

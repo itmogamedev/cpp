@@ -2,7 +2,6 @@
 
 int main()
 {
-	setlocale(LC_ALL, "");
 	int input = 0;
 	std::cout << "Write your number ";
 	std::cin >> input;

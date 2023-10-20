@@ -4,7 +4,7 @@ int main()
 {
     //PROBLEM ¹1
 
-    std::cout << "The first N Fibonacci numbers\n";
+    /*std::cout << "The first N Fibonacci numbers\n";
 
     size_t size;
 
@@ -30,7 +30,13 @@ int main()
 
     //delete[] array; this thing frees memory, but it causes VS to crash, so I've commented it out.
 
-    std::cout << "\nThe programm has completed.\n\n";
+    std::cout << "\nThe programm has completed.\n\n";*/
+
+    int n = 5;
+
+    std::cin < n;
+
+    int array[n];
 
     return 0;
 }

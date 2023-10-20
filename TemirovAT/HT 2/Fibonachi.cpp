@@ -15,14 +15,12 @@ int main()
 	}
 	for (i = 1; i <= N; i++)
 	{
-		if (i == 1)
+
+		if (i == 1 or i == 2)
 		{
-			std::cout << 0 << endl;
+			std::cout << i - 1 << endl;
 		}
-		if (i == 2)
-		{
-			std::cout << 1 << endl;
-		}
+
 		if (i % 2 != 0 and i != 1)
 		{
 			std::cout << a + b << endl;

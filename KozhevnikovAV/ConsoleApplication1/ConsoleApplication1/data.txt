@@ -1,0 +1,8 @@
+
+1 Kozh 79925250709 100 junior
+2 Prohorov 76548089060 150 middle
+3 Kachenko 84563008969 200 senior
+4 Ivanchenko 56008007854 250 Team
+5 Zarchenko 85432187091 300 Traktorist
+
+7 Poroshenko 85003124083 100 junior

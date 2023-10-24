@@ -1,10 +1,10 @@
 #include <iostream>
 int main() {
 	std::cout << "Input a digit: ";
-	int cifra = 0;
-	std::cin >> cifra;
+	int number = 0;
+	std::cin >> number;
 	std::cout << "The first symbol is: ";
-	switch (cifra) {
+	switch (number) {
 		case 0:
 			std::cout << 'z';
 			break;

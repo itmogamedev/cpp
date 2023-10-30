@@ -1,4 +1,4 @@
-// переполнение по типу double
+// overflow by type double
 
 #include <iostream>
 #include <cmath>

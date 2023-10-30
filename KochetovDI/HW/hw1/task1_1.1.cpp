@@ -1,4 +1,4 @@
-// переполнение по типу char
+//overflow by type char
 
 #include <iostream>
 

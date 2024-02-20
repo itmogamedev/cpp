@@ -1,7 +1,3 @@
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
-
-# Clion projects file
-.idea
-cmake-build-*

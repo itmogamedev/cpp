@@ -6,7 +6,6 @@
 
 int main()
 {
-
 	std::vector<std::string> vecForCheck;
 
 	for (int a = 0; a <= 200; a++)
@@ -23,5 +22,4 @@ int main()
 	});
 
 	std::cout << howMany << " strings in our vector start with " << lookFor << std::endl;
-
 }

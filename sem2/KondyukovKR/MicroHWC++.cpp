@@ -1,30 +1,28 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <sstream> 
 
-using namespace std;
-
 int main() {
     setlocale(LC_ALL, "ru");
 
-    cout << "Enter the string first, then the character: " << endl;
+    std::cout << "Enter the string first, then the character: " << std::endl;
 
-    string stroka_line;
+    std::string stroka_line;
     char bukva_char;
 
-    getline(cin, stroka_line);
-    cin >> bukva_char;
+    std::getline(std::cin, stroka_line);
+    std::cin >> bukva_char;
 
-    stringstream ss(stroka_line);
-    vector<string> words;
-    string word;
+    std::stringstream ss(stroka_line);
+    std::vector<std::string> words;
+    std::string word;
     while (ss >> word) {
         words.push_back(word);
     }
 
-    auto count_and_show_words = [bukva_char](const vector<string> &words) {
-        vector<string> filtered_words; 
+    auto count_and_show_words = [bukva_char](const std::vector<std::string> &words) {
+        std::vector<std::string> filtered_words; 
         for (const auto &word : words) {
             if (!word.empty() && word[0] == bukva_char) {
                 filtered_words.push_back(word);
@@ -33,13 +31,13 @@ int main() {
         return filtered_words; 
         };
 
-    vector<string> filtered_words = count_and_show_words(words); 
-    cout << "Number of words starting with letter '" << bukva_char << "': " << filtered_words.size() << endl;
-    cout << "These are the words: ";
+    std::vector<std::string> filtered_words = count_and_show_words(words); 
+    std::cout << "Number of words starting with letter '" << bukva_char << "': " << filtered_words.size() << std::endl;
+    std::cout << "These are the words: ";
     for (const auto &fw : filtered_words) {
-        cout << fw << " ";
+        std::cout << fw << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
 
     return 0;
 }

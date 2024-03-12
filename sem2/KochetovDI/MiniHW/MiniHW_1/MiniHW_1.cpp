@@ -4,7 +4,7 @@
 #include <algorithm>
 
 int main() {
-    std::vector<std::string> strings = { "Elephant", "Mountain", "Sunshine", "Butterfly", "Chocolate", "Egg"};
+    std::vector<std::string> strings = { "Elephant", "Mountain", "Sunshine", "Butterfly", "Chocolate", "Egg" };
 
     char startingStringChar;
 
@@ -20,8 +20,7 @@ int main() {
 
     std::cout << "Enter the letter you want to search for:" << std::endl;
     std::cin >> startingStringChar;
-    std::cout << "Number of strings starting with '" << startingStringChar << "': "
-        << countStringsStartingWith(startingStringChar) << std::endl;
+    std::cout << "Number of strings starting with '" << startingStringChar << "': " << countStringsStartingWith(startingStringChar) << std::endl;
 
     return 0;
 }

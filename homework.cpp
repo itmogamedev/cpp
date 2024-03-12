@@ -15,11 +15,26 @@ vector<string> starts_with_c(const vector<string>& v, char c) {
 }
 
 int main() {
-    vector<string> vec = {"atttan", "asdhf", "ksd", "sdf", "avoc"};
-    char c = 'a';
+    vector<string> vec;
+    char c;
+
+    cout << "Введите букву для поиска: ";
+    cin >> c;
+    
+    cin.ignore();
+
+    cout << "Напишите ваш текст (для завершения напишите STOP):\n";
+    string input_str;
+    while (true) {
+        getline(cin, input_str);
+        if (input_str == "STOP") {
+            break;
+        }
+        vec.push_back(input_str);
+    }
 
     vector<string> filtered_strs = starts_with_c(vec, c);
-    cout << "Strings starting with '" << c << "':" << endl;
+    cout << "Строки начинающиеся с '" << c << "':" << endl;
     for (int i = 0; i < filtered_strs.size(); i++) {
         cout << filtered_strs[i] << endl;
     }

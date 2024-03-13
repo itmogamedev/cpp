@@ -3,7 +3,7 @@
 #include <string>
 #include <algorithm>
 
-using namespace std;
+using std::cout, std::vector, std::cin, std::string;
 
 int main()
 {

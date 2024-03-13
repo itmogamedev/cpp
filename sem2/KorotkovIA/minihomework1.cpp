@@ -3,29 +3,28 @@
 #include <string>
 #include <algorithm>
 
-using namespace std;
-
-auto program = [](const vector<string>& v, char symb) {
-    return count_if(v.begin(), v.end(), [symb](string line) {return line[0] == symb; });
+auto program = [](const std::vector<std::string>& v, char symb) {
+    return count_if(v.begin(), v.end(), [symb](std::string line) {return line[0] == symb; });
 };
 
 
 int main() {
-    vector<string> list = {"pen", "rubber", "pencil", "ruler", "case", "backpack", "notebook"};
+    std::vector<std::string> list = {"pen", "rubber", "pencil", "ruler", "case", "backpack", "notebook"};
     
     while (true){
-        cout << "Введите символ " << endl;
+        std::cout << "Введите символ " << std::endl;
         char x;
-        cin >> x;
+        std::cin >> x;
         int character = program(list, x);
         if (character == 1){
-            cout << "По символу "  << x << " найдено " << character <<  " строка" << endl << endl;
+            std::cout << "По символу "  << x << " найдено " << character <<  " строка" << std::endl << std::endl;
         }
         else if(character > 1 and character < 5){
-            cout << "По символу "  << x << " найдено " << character <<  " строки" << endl << endl;
+            std::cout << "По символу "  << x << " найдено " << character <<  " строки" << std::endl << std::endl;
+            
         }
         else{
-            cout << "По символу "  << x << " найдено " << character <<  " строк" << endl << endl;
+            std::cout << "По символу "  << x << " найдено " << character <<  " строк" << std::endl << std::endl;
         }
     }
 }

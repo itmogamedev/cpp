@@ -6,9 +6,10 @@
 int main() {
     std::vector<std::string> strings = {};
     char targetChar;
-    std::string b,a="";
-    std::cin>>b;
-    std::cout << b;
+    std::string b, a = "";
+    std::cout << "text\n";
+    std::getline(std::cin,b,'\n');
+    std::cout << "char\n";
     std::cin >> targetChar;
     for (int i = 0; i <= b.length(); i++) {
         if (b[i] == ' ') {

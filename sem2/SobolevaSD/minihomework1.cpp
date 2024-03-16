@@ -1,21 +1,28 @@
-﻿#include <iostream>
-#include <vector>
+﻿#include <vector>
 #include <string>
 #include <algorithm>
-
-using std::cout, std::vector, std::cin, std::string;
+#include <iostream>
 
 int main()
 {
     setlocale(LC_ALL, "RUS");
-    vector <string> str = { "Aaaaaa", "Bbbbbb", "Gouegfow", "Obhoefi", "qegwweg", "qegw", "Ahoe" };
+    int n;
+    std::cout << "Сколько строк вы хотите ввести?" << std::endl;
+    std::cin >> n;
+    std::string temp;
+    std::vector <std::string> str;
+    std::cout << "Введите строки" << std::endl;
+    //str = { "Aaaaaa", "Bbbbbb", "Gouegfow", "Obhoefi", "qegwweg", "qegw", "Ahoe" };
+    for (int i = 0; i <= n; i++) {
+        std::getline(std::cin, temp);
+        str.push_back(temp);
+    }
     char simb;
-    cout << "Введите символ для поиска:" << endl;
-    cin >> simb;
+    std::cout << "Введите символ для поиска:" << std::endl;
+    std::cin >> simb;
     int answer;
-    answer = count_if(str.begin(), str.end(), [simb](string _str) {
+    answer = count_if(str.begin(), str.end(), [simb](std::string _str) {
         return (_str[0] == simb);
         });
-    cout << answer;
+    std::cout << answer;
 }
-

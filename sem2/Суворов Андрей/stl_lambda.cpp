@@ -7,7 +7,7 @@ int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    std::vector<std::string> stroki;
+    std::vector<std::string> all_strings;
     std::cout << "Введите строки (каждая с новой строки, для завершения введите на новой строке '.'):\n";
     std::string input;
     while (true) {
@@ -15,13 +15,13 @@ int main() {
         if (input == ".") {
             break;
         }
-        stroki.push_back(input);
+        all_strings.push_back(input);
     }
     char Symbol;
     std::cout << "Введите символ: ";
     std::cin >> Symbol;
 
-    int quontity = std::count_if(stroki.begin(), stroki.end(), [&Symbol](const std::string &stroki) {
+    int quontity = std::count_if(all_strings.begin(), all_strings.end(), [&Symbol](const std::string &stroki) {
         return not(stroki.empty()) and stroki.front() == Symbol; });
     std::cout << "Количество строк, начинающихся с символа '" << Symbol << "': " << quontity << std::endl;
     return 0;

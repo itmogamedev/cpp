@@ -21,8 +21,8 @@ int main() {
     std::cout << "Введите символ: ";
     std::cin >> Symbol;
 
-    int quontity = std::count_if(all_strings.begin(), all_strings.end(), [&Symbol](const std::string &stroki) {
-        return not(stroki.empty()) and stroki.front() == Symbol; });
+    int quontity = std::count_if(all_strings.begin(), all_strings.end(), [&Symbol](const std::string & all_strings) {
+        return not(all_strings.empty()) and all_strings.front() == Symbol; });
     std::cout << "Количество строк, начинающихся с символа '" << Symbol << "': " << quontity << std::endl;
     return 0;
 };

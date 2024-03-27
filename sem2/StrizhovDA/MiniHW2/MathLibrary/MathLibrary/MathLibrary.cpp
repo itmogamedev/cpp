@@ -30,7 +30,7 @@ double medain(std::vector<long long> vec)
         return vec[vec.size() / 2];
     else
     {
-        return (vec[vec.size() / 2] + vec[(vec.size() / 2) - 1]) / 2;
+        return (vec[vec.size() / 2] + vec[(vec.size() / 2) - 1]) / 2.0;
     }
 }
 
@@ -42,7 +42,7 @@ double average_qadr(std::vector<long long> vec)
     {
         if (If_num_overflowing(elem))
         {
-            std::cout << "Происходит переполнение";
+            std::cout << "РџСЂРѕРёСЃС…РѕРґРёС‚ РїРµСЂРµРїРѕР»РЅРµРЅРёРµ";
             exit(0);
         }
         sum_quad += pow(elem,2);
@@ -60,7 +60,7 @@ double dispersion(std::vector<long long> vec)
     {
         if (If_num_overflowing(elem))
         {
-            std::cout << "Происходит переполнение";
+            std::cout << "РџСЂРѕРёСЃС…РѕРґРёС‚ РїРµСЂРµРїРѕР»РЅРµРЅРёРµ";
             exit(0);
         }
         sum_quad_disp += (pow((elem - aver), 2));

@@ -1,3 +1,0 @@
-C:/Users/Asus/CLionProjects/Lib/cmake-build-debug/CMakeFiles/Lib.dir
-C:/Users/Asus/CLionProjects/Lib/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Asus/CLionProjects/Lib/cmake-build-debug/CMakeFiles/rebuild_cache.dir

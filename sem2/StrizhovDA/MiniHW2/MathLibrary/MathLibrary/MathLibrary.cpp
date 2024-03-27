@@ -8,8 +8,6 @@
 #include <iostream>
 
 
-// Produce the next value in the sequence.
-// Returns true on success, false on overflow.
 bool If_num_overflowing(long long num)
 {
  if (sqrt(LLONG_MAX) < num)
@@ -30,7 +28,7 @@ double medain(std::vector<long long> vec)
         return vec[vec.size() / 2];
     else
     {
-        return (vec[vec.size() / 2] + vec[(vec.size() / 2) - 1]) / 2;
+        return (vec[vec.size() / 2] + vec[(vec.size() / 2) - 1]) / 2.0;
     }
 }
 
@@ -47,7 +45,7 @@ double average_qadr(std::vector<long long> vec)
         }
         sum_quad += pow(elem,2);
     }
-    sum_quad = pow(sum_quad / vec.size(),0.5);
+    sum_quad = sqrt(sum_quad / vec.size());
     return sum_quad;
 }
 
@@ -58,7 +56,7 @@ double dispersion(std::vector<long long> vec)
 
     for (long long elem : vec)
     {
-        if (If_num_overflowing(elem))
+        if (If_num_overflowing(elem - aver) || (LLONG_MIN + aver > elem))
         {
             std::cout << "Происходит переполнение";
             exit(0);

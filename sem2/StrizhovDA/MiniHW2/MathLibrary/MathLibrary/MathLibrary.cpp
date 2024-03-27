@@ -40,7 +40,7 @@ double average_qadr(std::vector<long long> vec)
     {
         if (If_num_overflowing(elem))
         {
-            std::cout << "Происходит переполнение";
+            std::cout << "РџСЂРѕРёСЃС…РѕРґРёС‚ РїРµСЂРµРїРѕР»РЅРµРЅРёРµ";
             exit(0);
         }
         sum_quad += pow(elem,2);
@@ -58,7 +58,7 @@ double dispersion(std::vector<long long> vec)
     {
         if (If_num_overflowing(elem - aver) || (LLONG_MIN + aver > elem))
         {
-            std::cout << "Происходит переполнение";
+            std::cout << "РџСЂРѕРёСЃС…РѕРґРёС‚ РїРµСЂРµРїРѕР»РЅРµРЅРёРµ";
             exit(0);
         }
         sum_quad_disp += (pow((elem - aver), 2));

@@ -4,7 +4,7 @@
 #include <algorithm>
 
 int main() {
-    std::vector<std::string> strings = { "Elephant", "Mountain", "Sunshine", "Butterfly", "Chocolate", "Egg" };
+    std::vector<std::string> strings = { "Dog", "Mountain", "Sunshine", "Butterfly", "Chocolate", "Egg" };
 
     char startingStringChar;
 
